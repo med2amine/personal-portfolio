@@ -256,10 +256,13 @@
     display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:center;
   }
   .about-photo{
-    aspect-ratio:4/5; background:var(--green-soft); border:1px solid var(--line);
-    border-radius:var(--radius); display:flex; align-items:center; justify-content:center;
-    font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--muted); text-align:center; padding:20px;
-  }
+  aspect-ratio:4/5; background:var(--green-soft); border:1px solid var(--line);
+  border-radius:var(--radius); display:flex; align-items:center; justify-content:center;
+  font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--muted); text-align:center; padding:20px;
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+}
   .about-text p{ color:var(--muted); font-size:15.5px; margin-bottom:16px; }
   .about-stats{ display:flex; gap:40px; margin-top:28px; }
   .about-stats div{ font-family:'IBM Plex Mono',monospace; }
@@ -469,8 +472,7 @@
   <div class="wrap">
     <div class="eyebrow">Case studies</div>
     <h2 class="section-title">Real reports, real clients, real numbers.</h2>
-    <p class="section-sub">Replace the details below with your own project specifics — names can stay anonymized ("a 40-seat neighborhood restaurant") if your client agreements require it.</p>
- 
+
     <div class="case reveal">
       <div class="case-grid">
         <div class="case-body">
@@ -554,12 +556,13 @@
 <!-- ================= ABOUT ================= -->
 <section id="about" style="background:var(--paper-raised); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
   <div class="wrap about-grid">
-    <div class="about-photo">Your photo here<br>(square or 4:5 crop works best)</div>
+    <div class="about-photo" style="background-image: url('imge_diali.jpg');"></div>
     <div class="about-text">
       <div class="eyebrow">About</div>
       <h2 class="section-title">I focus on one thing: local, in-person businesses.</h2>
       <p>Mohamed Amine Laaraj — a data scientist who works specifically with restaurants, cafés and gyms, because their data has the same shape every time: covers, tickets, check-ins, memberships. That focus means faster analysis and reports that speak your language instead of a generic dashboard.</p>
-      <p>Replace this paragraph with your real background: years of experience, tools you use (Python, SQL, Power BI, etc.), and anything that builds credibility with local business owners specifically.</p>
+      <p>I'm a Data Scientist with a background in Statistics and Data Science, currently expanding my expertise in Data Engineering and AI. I use Python, SQL, Looker Studio, Excel, and Machine Learning to help businesses understand their data and make better decisions.</p>
+      
       <div class="about-stats">
         <div><span class="n">12+</span><span class="l">clients served</span></div>
         <div><span class="n">98%</span><span class="l">monthly retention</span></div>
@@ -578,11 +581,9 @@
     <div class="testimonials">
       <div class="testimonial reveal">
         <p>"I used to guess why a slow Tuesday happened. Now I get a page that just tells me, and what to do about it."</p>
-        <div class="who"><b>Owner name</b> — Restaurant, city</div>
       </div>
       <div class="testimonial reveal">
         <p>"The churn report alone paid for itself in the first month. We caught members we would have lost."</p>
-        <div class="who"><b>Owner name</b> — Gym / studio, city</div>
       </div>
     </div>
   </div>
